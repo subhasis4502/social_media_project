@@ -1,24 +1,26 @@
 import "./message.css";
 import { format } from "timeago.js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function Message({ message, own }) {
   const [user, setUser] = useState(null);
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
-  const friendId = message.sender;
+  useEffect(() => {
+    const friendId = message.sender;
 
-  const getUser = async () => {
-    try {
-      const res = await axios("/users?userId=" + friendId);
-      //console.log(res.data);
-      setUser(res.data);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-  getUser();
+    const getUser = async () => {
+      try {
+        const res = await axios("/users?userId=" + friendId);
+        //console.log(res.data);
+        setUser(res.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    getUser();
+  }, [message]);
 
   console.log(message);
   //console.log(own);

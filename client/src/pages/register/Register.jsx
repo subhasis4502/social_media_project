@@ -34,9 +34,9 @@ export default function Register() {
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
-          <h3 className="loginLogo">Lamasocial</h3>
+          <h3 className="loginLogo">Captiona</h3>
           <span className="loginDesc">
-            Connect with everybody on Lamasocial.
+            Connect with everybody on Captiona.
           </span>
         </div>
         <div className="loginRight">
