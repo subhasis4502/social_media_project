@@ -3,19 +3,14 @@ import Topbar from "../../components/topbar/Topbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Feed from "../../components/feed/Feed";
 import Rightbar from "../../components/rightbar/Rightbar";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router";
-import { Edit } from "@material-ui/icons";
-import { Link } from "react-router-dom";
-import { AuthContext } from "../../context/AuthContext";
 
 export default function Profile() {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const [user, setUser] = useState({});
   const username = useParams().username;
-  const { user: currentUser } = useContext(AuthContext);
-  //console.log(params.username);
 
   useEffect(() => {
     const fetchUser = async () => {

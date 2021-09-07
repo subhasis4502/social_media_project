@@ -15,10 +15,16 @@
 
 .logo {
   font-size: 24px;
-  margin-left: 20px;
+  margin-left: 5px;
   font-weight: bold;
   color: white;
   cursor: pointer;
+}
+
+.logoImg{
+  height: 20px;
+  margin-left: 20px;
+  margin-right: 5px;
 }
 
 .topbarCenter {

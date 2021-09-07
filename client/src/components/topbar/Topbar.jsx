@@ -34,7 +34,8 @@ export default function Topbar() {
     <div className="topbarContainer">
       <div className="topbarLeft">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="logo">Lamasocial</span>
+          <img className="logoImg" src="../../assets/logo.png" alt="" />
+          <span className="logo">Be-Social</span>
         </Link>
       </div>
       <div className="topbarCenter">
