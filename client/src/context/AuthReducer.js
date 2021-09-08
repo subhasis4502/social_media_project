@@ -1,3 +1,5 @@
+//AuthReducer returns the values according to the process
+
 const AuthReducer = (state, action) => {
   switch (action.type) {
     case "LOGIN_START":

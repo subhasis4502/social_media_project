@@ -1,0 +1,5 @@
+1. Update post
+2. Delete post
+3. Forget password
+4. Delete user
+5. 
