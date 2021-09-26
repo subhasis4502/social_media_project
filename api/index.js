@@ -13,7 +13,7 @@ const messageRoute = require("./routes/messages");
 const router = express.Router();
 const path = require("path");
 
-dotenv.config();
+dotenv.config(); //Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env
 
 //Connecting to our database
 mongoose.connect(

@@ -1,3 +1,5 @@
+//AuthContext passes the variable from AuthReducer to the required pages
+
 import { createContext, useEffect, useReducer } from "react";
 import AuthReducer from "./AuthReducer";
 
